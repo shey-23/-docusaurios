@@ -27,3 +27,15 @@ La lógica de ejecución está completamente delegada al comando y al receptor.
 Ejemplo: 
 
 Menús contextuales 
+
+Ventajas:
+
+Separa el objeto que envía la solicitud del que la ejecuta.
+
+Los comandos pueden configurarse dinámicamente para realizar tareas específicas.
+
+Desventajas:
+
+Incremento en el número de clases
+
+Complejidad adicional
