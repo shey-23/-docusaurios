@@ -1,0 +1,35 @@
+[33mcommit 2f9b348dd04c4ce5a3d7c9447eb9bbd895e98de1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeacture/valdo[m[33m, [m[1;31morigin/feacture/valdo[m[33m)[m
+Author: Sarahi <larryrf3@gmail.com>
+Date:   Wed Dec 4 19:01:20 2024 -0600
+
+    Se agrego las caracteristicas para Themplate Method
+
+[33mcommit 5ee4153743270323dd9ba121dfcf1115274b007c[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mfeacture/sara[m[33m, [m[1;32mdevelop[m[33m)[m
+Author: Sarahi <larryrf3@gmail.com>
+Date:   Thu Nov 28 02:16:26 2024 -0600
+
+    correcion de caracteres,diseño,errores de ortograficos
+
+[33mcommit 1fced0ceadf976e1959e65983f0da051385424b1[m
+Author: Sarahi <larryrf3@gmail.com>
+Date:   Thu Nov 28 01:53:14 2024 -0600
+
+    mas contenido en los archivos observer y strategy implementacion,contras-pros,ejemplos
+
+[33mcommit 4bf9a905b9fa1c57cdf443f036def74f4c8b02dd[m
+Author: Sarahi <larryrf3@gmail.com>
+Date:   Thu Nov 28 01:27:56 2024 -0600
+
+    añadi contennido a los los archivos observer y strategy
+
+[33mcommit 5c761d2772570cbb9b10179b22451e93cd6f2d89[m[33m ([m[1;31morigin/feacture/sara[m[33m)[m
+Author: Sarahi <larryrf3@gmail.com>
+Date:   Thu Nov 28 00:09:39 2024 -0600
+
+    añadi dos archivos donde iniciare documentacion de dos patrones de diseño
+
+[33mcommit 74cfff4e3e7f7842c7c2a3f1656be72a47d571b5[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/feacture/shey[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: shey <2022285@utsh.edu.mx>
+Date:   Tue Nov 26 19:53:57 2024 -0600
+
+    Inicializando Proyecto
