@@ -4,7 +4,7 @@
 
 ### Definicion
 
-Es un patrón de diseño de software en el que un objeto, llamado sujeto, mantiene una lista de sus dependientes, llamados observadores, y les notifica automáticamente cualquier cambio de estado, normalmente llamando a uno de sus métodos.
+Es un patrón de diseño de software en el que un objeto, llamado sujeto, mantiene una lista de sus dependientes, llamados observadores, ygvit les notifica automáticamente cualquier cambio de estado, normalmente llamando a uno de sus métodos.
 
 ### Estructura
 
