@@ -19,11 +19,6 @@ Encadenamiento y encolado:
 Los comandos pueden almacenarse en colas, facilitando la ejecución diferida o en lotes.
 Es útil en aplicaciones que necesitan operar de manera asincrónica.
 
-Separación de responsabilidades:
-
-El cliente no necesita saber cómo se realiza una acción; simplemente invoca un comando.
-La lógica de ejecución está completamente delegada al comando y al receptor.
-
 Ejemplo: 
 
 Menús contextuales 
