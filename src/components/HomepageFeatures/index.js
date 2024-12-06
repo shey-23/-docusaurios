@@ -4,14 +4,15 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Patrones de diseño',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Explora diferentes patrones de diseño como <strong>Strategy</strong>, <strong>Observer</strong> y <strong>Command</strong>.
+        Aprende cómo pueden ayudarte a resolver problemas comunes en desarrollo de software.
       </>
     ),
+    
   },
   {
     title: 'Focus on What Matters',
