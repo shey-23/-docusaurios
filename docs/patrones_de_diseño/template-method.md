@@ -3,6 +3,13 @@
 ## Definicion
 
 Es un patron de diseño de comportamiento que define la estructura de un algoritmo en una clase base, pero delega la implementacion de algunos pasos espesificos a las subclases. 
+## Proposito
+
+Template Method es un patrón de diseño de comportamiento que define el esqueleto de un algoritmo en la superclase pero permite que las subclases sobrescriban pasos del algoritmo sin cambiar su estructura.
+
+![](/img/proposito.png)
+
+[URL](https://refactoring.guru/images/patterns/content/template-method/template-method.png?id=eee9461742f832814f19612ccf472819)
 
 ## Carecteristicas principales
 
