@@ -1,3 +1,5 @@
+
+
 # Patron de diseño(Observer)
 
 ## Observer
