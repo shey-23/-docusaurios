@@ -2,6 +2,7 @@
 
 ## Observer
 
+![](/img/observer.png)
 ### Definicion
 
 Es un patrón de diseño de software en el que un objeto, llamado sujeto, mantiene una lista de sus dependientes, llamados observadores, ygvit les notifica automáticamente cualquier cambio de estado, normalmente llamando a uno de sus métodos.
@@ -49,8 +50,9 @@ Es un patrón de diseño de software en el que un objeto, llamado sujeto, mantie
 Si te suscribes a un periódico o una revista, ya no necesitarás ir a la tienda a comprobar si el siguiente número está disponible. En lugar de eso, el notificador envía nuevos números directamente a tu buzón justo después de la publicación, o incluso antes.El notificador mantiene una lista de suscriptores y sabe qué revistas les interesan. Los suscriptores pueden abandonar la lista en cualquier momento si quieren que el notificador deje de enviarles nuevos números
 
 
-[Referencia](https://refactoring.guru/es/design-patterns/observer)
-[Referencia](https://keepcoding.io/blog/patron-observer-y-como-se-usa/)
+[Referencia de Busqueda](https://refactoring.guru/es/design-patterns/observer)
+
+[Referencia de Busqueda](https://keepcoding.io/blog/patron-observer-y-como-se-usa/)
 
 
 <!-- ---

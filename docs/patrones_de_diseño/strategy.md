@@ -2,6 +2,7 @@
 # Patron de Diseño (Strategy)
 
 ## Strategy 
+![](/img/strategy.png)
 
 ### Definicon
 
@@ -53,7 +54,7 @@ Es un patrón de diseño de software que permite a una clase cambiar su comporta
 
 Imagina que tienes que llegar al aeropuerto. Puedes tomar el autobús, pedir un taxi o ir en bicicleta. Éstas son tus estrategias de transporte. Puedes elegir una de las estrategias, dependiendo de factores como el presupuesto o los límites de tiempo. 
 
-[Referencia](https://refactoring.guru/es/design-patterns/strategy)
+[Referencia de Busqueda](https://refactoring.guru/es/design-patterns/strategy)
 <!-- ---
 
 sidebar_position: 3
