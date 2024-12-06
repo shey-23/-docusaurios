@@ -35,6 +35,20 @@ El patrón Template Method sugiere que dividas un algoritmo en una serie de paso
 
 Veamos cómo funciona en nuestra aplicación de minería de datos. Podemos crear una clase base para los tres algoritmos de análisis. Esta clase define un método plantilla consistente en una serie de llamadas a varios pasos de procesamiento de documentos.
 
+![](/img/solucion.png)
+
+Al principio, podemos declarar todos los pasos como abstractos, forzando a las subclases a proporcionar sus propias implementaciones para estos métodos. En nuestro caso, las subclases ya cuentan con todas las implementaciones necesarias, por lo que lo único que tendremos que hacer es ajustar las firmas de los métodos para que coincidan con los métodos de la superclase.
+
+Ahora, veamos lo que podemos hacer para deshacernos del código duplicado. Parece que el código para abrir/cerrar archivos y extraer/analizar información es diferente para varios formatos de datos, por lo que no tiene sentido tocar estos métodos. No obstante, la implementación de otros pasos, como analizar los datos sin procesar y generar informes, es muy similar, por lo que puede meterse en la clase base, donde las subclases pueden compartir ese código.
+
+Como puedes ver, tenemos dos tipos de pasos:
+
+- Los pasos abstractos deben ser implementados por todas las subclases.
+
+- Los pasos opcionales ya tienen cierta implementación por defecto, pero aún así pueden sobrescribirse si es necesario
+
+
+Hay otro tipo de pasos, llamados ganchos (hooks). Un gancho es un paso opcional con un cuerpo vacío. Un método plantilla funcionará aunque el gancho no se sobrescriba. Normalmente, los ganchos se colocan antes y después de pasos cruciales de los algoritmos, suministrando a las subclases puntos adicionales de extensión para un algoritmo.
 
 <!-- ---
 sidebar_position: 2
