@@ -1,4 +1,4 @@
-# Themplate Method
+# Themplate Method (Metodo plantilla)
 
 ## Definicion
 
