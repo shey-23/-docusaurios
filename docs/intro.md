@@ -8,12 +8,12 @@ Se aplican a diferentes escenarios de diseño y programación, promoviendo la cl
 
 Algumos de los patrones que estaremos viendo son:
 
-- Observer
-- Strategy
-- Templete Method 
-- Visitor  
-- State
-- Command 
+- **Observer**
+- **Strategy**
+- **Templete Method**
+- **Visitor**  
+- **State**
+- **Command**
 <!-- <div className="container">
 <Heading as="h1" className="hero__title">
   {/* {siteConfig.title} */}
