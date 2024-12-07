@@ -20,13 +20,17 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Aprende sobre los patrones de diseño
           </Link>
+          
+
         </div>
       </div>
+      
     </header>
   );
 }
+
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();

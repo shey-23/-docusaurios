@@ -1,39 +1,42 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Patrones de diseño',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Explora diferentes patrones de diseño como <strong>Strategy</strong>, <strong>Observer</strong> y <strong>Command</strong>.
+        Aprende cómo pueden ayudarte a resolver problemas comunes en desarrollo de software.
       </>
     ),
+
+
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Diseñado en Docusaurus',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+         Fácil de instalar y utilizar, permitiéndote poner tu sitio web en línea rápidamente
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Utilizacion de React',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Una poca personalizacion con react
       </>
+      
     ),
   },
 ];
+
 
 function Feature({Svg, title, description}) {
   return (
