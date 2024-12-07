@@ -40,3 +40,10 @@ Puede ser complejo si hay demasiados estados interdependientes.
 
 # Analogía en el mundo real
 
+![](/img/img.png)
+
+Los botones e interruptores de tu smartphone se comportan de forma diferente dependiendo del estado actual del dispositivo:
+
+Cuando el teléfono está desbloqueado, al pulsar botones se ejecutan varias funciones.
+Cuando el teléfono está bloqueado, pulsar un botón desbloquea la pantalla.
+Cuando la batería del teléfono está baja, pulsar un botón muestra la pantalla de carga.
