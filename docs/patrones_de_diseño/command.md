@@ -1,31 +1,50 @@
-<!-- ---
-sidebar_position: 5
----
+# Patron de diseño command 
 
-# Deploy your site
+# Definicion: 
 
-Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
+Es un patrón de diseño de comportamiento que convierte una solicitud en un objeto independiente que contiene toda la información sobre la solicitud. Esta transformación te permite parametrizar los métodos con diferentes solicitudes, retrasar o poner en cola la ejecución de una solicitud y soportar operaciones que no se pueden realizar.
 
-It builds your site as simple **static HTML, JavaScript and CSS files**.
+![](/img/img1.webp)
 
-## Build your site
+# Características: 
 
-Build your site **for production**:
+Encapsulación de solicitudes:
+Representa una solicitud como un objeto independiente.
+Aísla al emisor de la solicitud (cliente) del receptor que la ejecuta.
 
-```bash
-npm run build
-```
+Parámetros y flexibilidad:
+Permite parametrizar objetos con diferentes comandos, ya que cada comando es una entidad independiente con su lógica encapsulada.
 
-The static files are generated in the `build` folder.
+Reutilización de comandos:
+Los comandos pueden ser reutilizados o compartidos entre diferentes partes del sistema.
 
-## Deploy your site
+Soporte para deshacer/rehacer:
+Es fácil implementar funcionalidades de deshacer y rehacer porque el comando encapsula toda la información necesaria para ejecutar y revertir una operación.
 
-Test your production build locally:
+Encadenamiento y encolado:
+Los comandos pueden almacenarse en colas, facilitando la ejecución diferida o en lotes.
+Es útil en aplicaciones que necesitan operar de manera asincrónica.
 
-```bash
-npm run serve
-```
+# Ejemplo: 
 
-The `build` folder is now served at [http://localhost:3000/](http://localhost:3000/).
+Menús contextuales 
 
-You can now deploy the `build` folder **almost anywhere** easily, **for free** or very small cost (read the **[Deployment Guide](https://docusaurus.io/docs/deployment)**). -->
+# Ventajas:
+
+Separa el objeto que envía la solicitud del que la ejecuta.
+
+Los comandos pueden configurarse dinámicamente para realizar tareas específicas.
+
+# Desventajas:
+
+Incremento en el número de clases
+
+Complejidad adicional
+
+## Analogía en el mundo real
+
+![](/img/capi.png)
+
+Tras un largo paseo por la ciudad, entras en un buen restaurante y te sientas a una mesa junto a la ventana. Un amable camarero se acerca y toma tu pedido rápidamente, apuntándolo en un papel. El camarero se va a la cocina y pega el pedido a la pared. Al cabo de un rato, el pedido llega al chef, que lo lee y prepara la comida. El cocinero coloca la comida en una bandeja junto al pedido. El camarero descubre la bandeja, comprueba el pedido para asegurarse de que todo está como lo querías, y lo lleva todo a tu mesa.
+
+El pedido en papel hace la función de un comando. Permanece en una cola hasta que el chef está listo para servirlo. Este pedido contiene toda la información relevante necesaria para preparar la comida. Permite al chef empezar a cocinar de inmediato, en lugar de tener que correr de un lado a otro aclarando los detalles del pedido directamente contigo.

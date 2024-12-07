@@ -1,152 +1,39 @@
-<!-- ---
-sidebar_position: 4
----
+# Patron de diseño state 
 
-# Markdown Features
+# Definicion 
+Es un patrón de diseño de comportamiento que permite a un objeto alterar su comportamiento cuando su estado interno cambia. Parece como si el objeto cambiara su clase.
 
-Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
+![](/img/img2.webp)
 
-## Front Matter
+# Características: 
 
-Markdown documents have metadata at the top called [Front Matter](https://jekyllrb.com/docs/front-matter/):
+Separación de responsabilidades:
+Descompone los estados en clases separadas, lo que evita la acumulación de lógica condicional en una única clase principal. Facilita la organización del código al encapsular el comportamiento relacionado con cada estado.
 
-```text title="my-doc.md"
-// highlight-start
----
-id: my-doc-id
-title: My document title
-description: My document description
-slug: /my-custom-url
----
-// highlight-end
+Cambio de comportamiento dinámico:
+El objeto principal (contexto) delega las acciones al estado actual.
+Es posible cambiar el estado en tiempo de ejecución para modificar el comportamiento del objeto sin necesidad de modificar su código.
 
-## Markdown heading
+Encapsulación de estados:
+Cada estado es representado como una clase concreta que implementa una interfaz común.
+Esto asegura que el contexto no tenga que preocuparse por los detalles específicos de cada estado.
 
-Markdown text with [links](./hello.md)
-```
+Facilidad para añadir nuevos estados:
+Se pueden agregar nuevos estados sin modificar el código existente, cumpliendo con el principio de abierto/cerrado.
 
-## Links
+Interfaz común:
+Los estados comparten una interfaz común, lo que asegura que el contexto no necesite saber qué estado está activo, solo invoca los métodos definidos en la interfaz.
 
-Regular Markdown links are supported, using url paths or relative file paths.
+# Ejemplo: 
 
-```md
-Let's see how to [Create a page](/create-a-page).
-```
+Máquina expendedora con diferentes estados
 
-```md
-Let's see how to [Create a page](./create-a-page.md).
-```
+# Ventajas: 
 
-**Result:** Let's see how to [Create a page](./create-a-page.md).
+Reducción de código duplicado al encapsular el comportamiento.
+Mayor legibilidad y mantenibilidad del código.
 
-## Images
+# Desventajas: 
 
-Regular Markdown images are supported.
-
-You can use absolute paths to reference images in the static directory (`static/img/docusaurus.png`):
-
-```md
-![Docusaurus logo](/img/docusaurus.png)
-```
-
-![Docusaurus logo](/img/docusaurus.png)
-
-You can reference images relative to the current file as well. This is particularly useful to colocate images close to the Markdown files using them:
-
-```md
-![Docusaurus logo](./img/docusaurus.png)
-```
-
-## Code Blocks
-
-Markdown code blocks are supported with Syntax highlighting.
-
-````md
-```jsx title="src/components/HelloDocusaurus.js"
-function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
-}
-```
-````
-
-```jsx title="src/components/HelloDocusaurus.js"
-function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
-}
-```
-
-## Admonitions
-
-Docusaurus has a special syntax to create admonitions and callouts:
-
-```md
-:::tip My tip
-
-Use this awesome feature option
-
-:::
-
-:::danger Take care
-
-This action is dangerous
-
-:::
-```
-
-:::tip My tip
-
-Use this awesome feature option
-
-:::
-
-:::danger Take care
-
-This action is dangerous
-
-:::
-
-## MDX and React Components
-
-[MDX](https://mdxjs.com/) can make your documentation more **interactive** and allows using any **React components inside Markdown**:
-
-```jsx
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`)
-    }}>
-    {children}
-  </span>
-);
-
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
-
-This is <Highlight color="#1877F2">Facebook blue</Highlight> !
-```
-
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`);
-    }}>
-    {children}
-  </span>
-);
-
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
-
-This is <Highlight color="#1877F2">Facebook blue</Highlight> ! -->
+Aumenta la cantidad de clases en el sistema.
+Puede ser complejo si hay demasiados estados interdependientes.
