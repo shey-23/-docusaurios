@@ -1,6 +1,11 @@
+# Patron de diseño command 
+
+# Definicion: 
+
 Es un patrón de diseño de comportamiento que convierte una solicitud en un objeto independiente que contiene toda la información sobre la solicitud. Esta transformación te permite parametrizar los métodos con diferentes solicitudes, retrasar o poner en cola la ejecución de una solicitud y soportar operaciones que no se pueden realizar.
 
-Características: 
+![](/img/img1.webp)
+# Características: 
 
 Encapsulación de solicitudes:
 Representa una solicitud como un objeto independiente.
@@ -19,17 +24,17 @@ Encadenamiento y encolado:
 Los comandos pueden almacenarse en colas, facilitando la ejecución diferida o en lotes.
 Es útil en aplicaciones que necesitan operar de manera asincrónica.
 
-Ejemplo: 
+# Ejemplo: 
 
 Menús contextuales 
 
-Ventajas:
+# Ventajas:
 
 Separa el objeto que envía la solicitud del que la ejecuta.
 
 Los comandos pueden configurarse dinámicamente para realizar tareas específicas.
 
-Desventajas:
+# Desventajas:
 
 Incremento en el número de clases
 
