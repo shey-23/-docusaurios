@@ -37,3 +37,6 @@ Mayor legibilidad y mantenibilidad del código.
 
 Aumenta la cantidad de clases en el sistema.
 Puede ser complejo si hay demasiados estados interdependientes.
+
+# Analogía en el mundo real
+
