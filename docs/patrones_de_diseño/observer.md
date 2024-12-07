@@ -47,9 +47,22 @@ Es un patrón de diseño de software en el que un objeto, llamado sujeto, mantie
 
 -  Los suscriptores son notificados en un orden aleatorio.
 
+# Pseucodigo
+Observer permite al objeto editor de texto notificar a otros objetos tipo servicio sobre los cambios en su estado
+
+![](/img/pseco_ob.png)
+
+Los objetos pueden empezar o parar de escuchar notificaciones durante el tiempo de ejecución, dependiendo del comportamiento que desees para tu aplicación al objeto ayudante especial dedicado justo a eso. Puedes actualizar ese objeto para que sirva como despachador centralizado de eventos, dejando que cualquier objeto actúe como notificador.
+
+Añadir nuevos suscriptores al programa no requiere cambios en clases notificadoras existentes, siempre y cuando trabajen con todos los suscriptores a través de la misma interfaz.
+
+![](/img/codi_obser.png)
+
 ### Analogia en el mundo real 
 
 Si te suscribes a un periódico o una revista, ya no necesitarás ir a la tienda a comprobar si el siguiente número está disponible. En lugar de eso, el notificador envía nuevos números directamente a tu buzón justo después de la publicación, o incluso antes.El notificador mantiene una lista de suscriptores y sabe qué revistas les interesan. Los suscriptores pueden abandonar la lista en cualquier momento si quieren que el notificador deje de enviarles nuevos números
+
+![](/img/ejem_obs.png)
 
 
 [Referencia de Busqueda](https://refactoring.guru/es/design-patterns/observer)
