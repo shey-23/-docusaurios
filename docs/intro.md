@@ -19,7 +19,7 @@ Algumos de los patrones que estaremos viendo son:
   {/* {siteConfig.title} */}
 </Heading>
 {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
-<div className={styles.buttons}>
+<div className={styles.buttons}>7
           <Link
             className="button button--secondary button--lg"
             to="/docs/patrones_de_diseño/observer">
@@ -27,4 +27,4 @@ Algumos de los patrones que estaremos viendo son:
           </Link>
 </div>
 </div> -->
-[Ir al primer patron Observer](./patrones_de_diseño/observer.md)
+[Ir al primer patron Observer](/patrones_de_diseño/observer.md)

@@ -1,4 +1,4 @@
-# Patron de diseño command 
+# Patron de Diseño (Command) 
 
 # Definicion: 
 
